@@ -7,19 +7,19 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f0f2f5;
-      color: #333;
+      background-color: #121212;
+      color: #e0e0e0;
       margin: 0;
       padding: 0;
       line-height: 1.6;
     }
     
     header {
-      background: linear-gradient(135deg, #007acc, #00a3ff);
-      color: #fff;
+      background: linear-gradient(135deg, #1f1f1f, #333333);
+      color: #e0e0e0;
       text-align: center;
       padding: 2rem 0;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     }
 
     h1 {
@@ -29,6 +29,7 @@
 
     p {
       font-size: 1.2rem;
+      color: #b0b0b0;
     }
 
     main {
@@ -38,46 +39,48 @@
     }
 
     .project {
-      background-color: #fff;
+      background-color: #1e1e1e;
       margin: 30px 0;
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
       transition: all 0.3s ease-in-out;
     }
 
     .project:hover {
       transform: translateY(-10px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     }
 
     .project h2 {
       margin-top: 0;
       font-size: 1.8rem;
+      color: #e0e0e0;
     }
 
     .project p {
       font-size: 1rem;
-      color: #555;
+      color: #c0c0c0;
     }
 
     .project a {
-      color: #007acc;
+      color: #4dabf7;
       text-decoration: none;
       font-weight: bold;
     }
 
     .project a:hover {
-      color: #005b99;
+      color: #82b1ff;
       text-decoration: underline;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #007acc;
-      color: #fff;
+      background-color: #1f1f1f;
+      color: #e0e0e0;
       margin-top: 50px;
+      border-top: 1px solid #333;
     }
 
     @media (max-width: 768px) {
@@ -108,12 +111,12 @@
   <main>
     <section class="project">
       <h2><a href="https://github.com/NichitaCP/Real-Estate" target="_blank">Real Estate</a></h2>
-      <p>This project focuses on real estate data analysis, exploring property data trends, pricing models, and visualizing key metrics to help make informed decisions.</p>
+      <p>Data processing and performance analysis of regression models. Scraping of <em>figaro-immo</em> data from Lyon, Marseille, and Paris. The project involves processing and cleaning the data in Python (text, regex, numeric conversion, and encoding categorical variables). It also includes exploratory analysis, data distribution, and normality analysis. Models used: Ridge, Lasso, Decision Trees, Bagging (Bootstrap aggregation), Voting Regressor, Adaptive Boosting, Gradient Boosting, Stochastic Gradient Boosting, Random Forest. The best-performing model was <strong>Gradient Boosting</strong>.</p>
     </section>
 
     <section class="project">
       <h2><a href="https://github.com/NichitaCP/ResNet_from_scratch" target="_blank">ResNet from Scratch</a></h2>
-      <p>A deep dive into building a Residual Neural Network (ResNet) from scratch using PyTorch. This project explores the architecture and implementation of ResNet for image classification tasks.</p>
+      <p>After learning PyTorch, I wanted to challenge myself to build and implement the ResNet architecture from scratch while making it customizable (by changing the expansion/dilation factor of the residual blocks, the size of the block filters, etc). Initially testing the architecture on food data, I decided to do something useful. As an individual with a higher chance of developing skin cancer, I wanted to build a model that would help me decide if I should visit a clinician, in case a mole changed its shape or if a new mole appeared. The project was deployed with Streamlit.</p>
     </section>
 
     <section class="project">
